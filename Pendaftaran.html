@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Pendaftaran</title>
+        <link rel="stylesheet" href="CSS/Pendaftaran.css">
+        <link rel="stylesheet" href="CSS/index.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Jadwal_Perkuliahan.html">Jadwal Perkuliahan</a></li>
+                <li>
+                    <a>Profil</a>
+                    <ul class="submenu">
+                        <li><a href="Biodata.html">Biodata</a></li>
+                        <li><a href="Tentang saya.html">Tentang Saya</a></li>
+                        <li><a href="Hobi.html">Hobi</a></li>
+                    </ul>
+                </li>
+                <li><a href="Pendaftaran.html">Halaman Pendaftaran</a></li>
+            </ul>
+        </nav>
+        <section class="container">
+            <header>Form Pendaftaran</header>
+            <form class="form" action="#">
+                <div class="input-box">
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan Nama Lengkap" required>
+                </div>
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" placeholder="Masukkan Email" required>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Nomor Telepon</label>
+                        <input type="number" placeholder="Masukkan Nomor Telepon" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Tanggal Lahir</label>
+                        <input type="date" placeholder="Masukkan Tangal Lahir" required>
+                    </div>
+                </div>
+                <div class="gender">
+                    <h3>Jenis Kelamin</h3>
+                    <div class="gender-option">
+                        <div class="gdr">
+                            <input type="radio" name="pilih" value="pria">
+                            <label for="pria">Pria</label>
+                        </div>
+                        <div class="gdr">
+                            <input type="radio" name="pilih" value="wanita">
+                            <label for="wanita">Wanita</label>
+                        </div>
+                </div>
+                <div class="input-box address">
+                    <label>Alamat</label>
+                    <input type="text" placeholder="Masukkan Nama Desa" required>
+                    <input type="text" placeholder="Masukkan RT RW" required>
+                    <div class="column">
+                        <div class="select-box">
+                            <select>
+                                <option hidden>Kabupaten/Kota</option>
+                                <option>Magetan</option>
+                                <option>Madiun</option>
+                                <option>Madiun Kota</option>
+                                <option>Ngawi</option>
+                                <option>Ponorogo</option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="Masukkan Nama Kecamatan" required>
+                    </div>
+                    <div class="column">
+                        <input type="text" placeholder="Masukkan Nama Desa" required>
+                        <input type="number" placeholder="Masukkan Kode Pos" required>
+                    </div>
+                </div>
+                <button>Daftar</button>
+            </form>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+:root {
+    --gray: #EAEAEC;
+    --primary: #29283F;
+    --primary-violet: #7370F4;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1.5rem;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: clamp(320px, 70vw, 740px);
+    min-width: 20rem;
+    min-height: 17.5rem;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.background {
+    flex: 1 1 15rem;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    flex: 3 1 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1rem;
+}
+
+.content > h2 {
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+    margin-bottom: clamp(0.35rem, 2vw, 0.55rem);
+}
+
+.content > p {
+    font-size: clamp(1rem, 
+    1.75vw, 1.1rem);
+    font-weight: 400;
+    margin: 0.4rem 0;
+}
+
+.content a {
+    color: var(--primary-violet);
+}
+
+.action-buttons {
+    border-top: 1px solid var(--gray);
+    padding-top: 1rem;
+    gap: 0.75rem;
+    display: flex;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.action-buttons a {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    outline: none;
+    border: none;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    flex: 1 0 15rem;
+    max-width: 100%;
+}
+
+.action-buttons a:hover {
+    text-decoration: underline;
+}
+
+.action-buttons a.secondary {
+    background-color: inherit;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    flex: 1 0 5rem;
+}
